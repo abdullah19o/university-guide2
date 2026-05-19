@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>دليل تنسيق الكليات الطبية والعلمية 2025-2026 | علمي علوم</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f0f1a;
+            --bg-secondary: #16162a;
+            --bg-card: #1a1a35;
+            --bg-hover: #24244a;
+            --accent-teal: #00d4aa;
+            --accent-mint: #5bffba;
+            --accent-coral: #ff6b8a;
+            --accent-amber: #ffc93c;
+            --accent-sky: #4facfe;
+            --text-primary: #e8e8f0;
+            --text-secondary: #a0a0c0;
+            --text-muted: #6e6e9a;
+            --border-color: #2a2a4a;
+            --shadow-card: 0 8px 32px rgba(0,0,0,0.4);
+            --gradient-header: linear-gradient(135deg, #00d4aa, #4facfe, #a78bfa);
+            --gradient-border: linear-gradient(90deg, #00d4aa, #4facfe, #a78bfa, #ff6b8a);
+        }
+        [data-theme="light"] {
+            --bg-primary: #f0f4f8;
+            --bg-secondary: #e2e8f0;
+            --bg-card: #ffffff;
+            --bg-hover: #f1f5f9;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --border-color: #cbd5e1;
+            --shadow-card: 0 8px 32px rgba(0,0,0,0.1);
+            --gradient-header: linear-gradient(135deg, #059669, #0284c7, #7c3aed);
+        }
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-primary: #f0f4f8;
+                --bg-secondary: #e2e8f0;
+                --bg-card: #ffffff;
+                --bg-hover: #f1f5f9;
+                --text-primary: #1e293b;
+                --text-secondary: #475569;
+                --text-muted: #94a3b8;
+                --border-color: #cbd5e1;
+                --shadow-card: 0 8px 32px rgba(0,0,0,0.1);
+                --gradient-header: linear-gradient(135deg, #059669, #0284c7, #7c3aed);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.7;
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(0,212,170,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(79,172,254,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(167,139,250,0.05) 0%, transparent 50%);
+            pointer-events: none; z-index: 0;
+            animation: bgPulse 10s ease-in-out infinite;
+        }
+        @keyframes bgPulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+        .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+        .particle { position: absolute; width: 4px; height: 4px; border-radius: 50%; opacity: 0; animation: float 10s infinite; }
+        @keyframes float { 0%{transform:translateY(100vh) translateX(0) scale(0);opacity:0} 10%{opacity:0.8} 90%{opacity:0.8} 100%{transform:translateY(-10vh) translateX(50px) scale(1);opacity:0} }
+        .theme-toggle { position: fixed; top: 20px; left: 20px; z-index: 1000; width: 50px; height: 50px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--border-color); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275); box-shadow: var(--shadow-card); }
+        .theme-toggle:hover { transform: scale(1.1) rotate(15deg); border-color: var(--accent-teal); box-shadow: 0 0 20px rgba(0,212,170,0.3); }
+        .header { position: relative; z-index: 10; text-align: center; padding: clamp(40px,8vw,80px) clamp(15px,4vw,40px) clamp(30px,5vw,50px); background: linear-gradient(180deg, rgba(15,15,26,0.95) 0%, transparent 100%); }
+        .header h1 { font-family: 'Outfit', 'Tajawal', sans-serif; font-size: clamp(1.5rem,5vw,2.6rem); font-weight: 900; background: var(--gradient-header); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; letter-spacing: 1px; animation: gradientShift 5s ease infinite; }
+        @keyframes gradientShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+        .header .subtitle { font-size: clamp(0.9rem,2.5vw,1.15rem); color: var(--text-secondary); margin-bottom: 8px; font-weight: 500; }
+        .header .year-badge { display: inline-block; font-family: 'Outfit', sans-serif; font-size: clamp(0.8rem,2vw,0.95rem); font-weight: 700; color: var(--accent-coral); border: 2px solid var(--accent-coral); padding: 6px 24px; border-radius: 30px; margin-top: 18px; box-shadow: 0 0 20px rgba(255,107,138,0.3); animation: pulse 2.5s infinite; letter-spacing: 2px; }
+        @keyframes pulse { 0%,100%{box-shadow:0 0 10px rgba(255,107,138,0.3);transform:scale(1)} 50%{box-shadow:0 0 25px rgba(255,107,138,0.5);transform:scale(1.02)} }
+        .stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: clamp(12px,3vw,25px); padding: clamp(20px,4vw,40px) clamp(15px,4vw,30px); max-width: 1100px; margin: 0 auto; position: relative; z-index: 10; }
+        .stat-item { text-align: center; padding: clamp(15px,3vw,25px) clamp(10px,2vw,20px); background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275); position: relative; overflow: hidden; box-shadow: var(--shadow-card); }
+        .stat-item::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gradient-border); transform: scaleX(0); transition: transform 0.4s ease; }
+        .stat-item:hover { transform: translateY(-8px) scale(1.02); border-color: var(--accent-teal); box-shadow: 0 0 20px rgba(0,212,170,0.3), 0 10px 40px rgba(0,0,0,0.2); }
+        .stat-item:hover::before { transform: scaleX(1); }
+        .stat-number { font-family: 'Outfit', sans-serif; font-size: clamp(1.5rem,4vw,2.2rem); font-weight: 800; background: var(--gradient-header); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block; margin-bottom: 4px; }
+        .stat-label { font-size: clamp(0.75rem,1.8vw,0.9rem); color: var(--text-secondary); font-weight: 500; }
+        .container { max-width: 1200px; margin: 0 auto; padding: clamp(10px,3vw,25px); position: relative; z-index: 10; }
+        .section-title { font-family: 'Outfit', 'Tajawal', sans-serif; font-size: clamp(1.2rem,3.5vw,1.8rem); font-weight: 800; color: var(--accent-teal); margin: clamp(25px,5vw,45px) 0 clamp(15px,3vw,25px); padding-right: clamp(12px,3vw,20px); border-right: 4px solid var(--accent-teal); display: flex; align-items: center; gap: 12px; text-shadow: 0 0 20px rgba(0,212,170,0.15); }
+        .section-title .icon { font-size: clamp(1.2rem,3vw,1.5rem); filter: drop-shadow(0 0 8px rgba(0,212,170,0.3)); }
+        .collapsible-section { margin-bottom: clamp(15px,3vw,25px); border-radius: 24px; overflow: hidden; background: var(--bg-card); border: 1px solid var(--border-color); transition: all 0.4s ease; position: relative; box-shadow: var(--shadow-card); }
+        .collapsible-section::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--gradient-border); opacity: 0; transition: opacity 0.4s ease; }
+        .collapsible-section:hover { border-color: rgba(0,212,170,0.3); box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+        .collapsible-section:hover::after { opacity: 1; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; padding: clamp(18px,4vw,28px) clamp(15px,4vw,30px); cursor: pointer; background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%); transition: all 0.4s ease; position: relative; overflow: hidden; user-select: none; -webkit-user-select: none; }
+        .section-header::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(0,212,170,0.06), transparent); transition: left 0.6s ease; }
+        .section-header:hover::before { left: 100%; }
+        .section-header:hover { background: linear-gradient(135deg, var(--bg-hover) 0%, var(--bg-secondary) 100%); }
+        .section-header-text { display: flex; align-items: center; gap: clamp(8px,2vw,15px); flex-wrap: wrap; }
+        .section-header-text h2 { font-family: 'Outfit', 'Tajawal', sans-serif; font-size: clamp(0.9rem,2.5vw,1.25rem); font-weight: 700; color: var(--text-primary); }
+        .section-header-text .badge { font-family: 'Outfit', sans-serif; font-size: clamp(0.65rem,1.5vw,0.75rem); padding: 4px 14px; border-radius: 12px; font-weight: 700; white-space: nowrap; }
+        .badge-govt { background: rgba(0,212,170,0.12); color: var(--accent-teal); border: 1px solid var(--accent-teal); box-shadow: 0 0 8px rgba(0,212,170,0.1); }
+        .badge-private { background: rgba(255,107,138,0.12); color: var(--accent-coral); border: 1px solid var(--accent-coral); box-shadow: 0 0 8px rgba(255,107,138,0.1); }
+        .toggle-icon { font-size: clamp(1.2rem,3vw,1.5rem); color: var(--accent-teal); transition: transform 0.5s cubic-bezier(0.68,-0.55,0.265,1.55); flex-shrink: 0; filter: drop-shadow(0 0 5px rgba(0,212,170,0.3)); }
+        .toggle-icon.open { transform: rotate(180deg); color: var(--accent-mint); filter: drop-shadow(0 0 8px rgba(91,255,186,0.4)); }
+        .section-content { max-height: 0; overflow: hidden; opacity: 0; transform: translateY(-20px) scaleY(0.95); transform-origin: top center; transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.5s ease 0.1s, transform 0.6s cubic-bezier(0.34,1.56,0.64,1), padding 0.4s ease; padding: 0 clamp(15px,4vw,30px); }
+        .section-content.open { max-height: 5000px; opacity: 1; transform: translateY(0) scaleY(1); padding: clamp(15px,3vw,25px) clamp(15px,4vw,30px) clamp(20px,4vw,35px); }
+        .collapsible-section:has(.section-content.open) { border-color: rgba(0,212,170,0.25); box-shadow: 0 0 40px rgba(0,212,170,0.08), 0 12px 40px rgba(0,0,0,0.25); }
+        .table-wrapper { overflow-x: auto; border-radius: 16px; border: 1px solid var(--border-color); -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--accent-teal) var(--bg-primary); }
+        .table-wrapper::-webkit-scrollbar { height: 6px; }
+        .table-wrapper::-webkit-scrollbar-track { background: var(--bg-primary); }
+        .table-wrapper::-webkit-scrollbar-thumb { background: var(--gradient-border); border-radius: 3px; }
+        .data-table { width: 100%; min-width: 600px; border-collapse: separate; border-spacing: 0; font-size: clamp(0.8rem,1.8vw,0.95rem); }
+        .data-table thead th { font-family: 'Outfit', 'Tajawal', sans-serif; font-weight: 700; font-size: clamp(0.7rem,1.5vw,0.85rem); text-transform: uppercase; letter-spacing: 1px; padding: clamp(10px,2vw,15px) clamp(8px,1.5vw,12px); background: linear-gradient(135deg, var(--bg-secondary), var(--bg-hover)); color: var(--accent-teal); border-bottom: 2px solid var(--accent-teal); text-align: center; position: sticky; top: 0; white-space: nowrap; }
+        .data-table tbody tr { transition: all 0.35s ease; }
+        .data-table tbody tr:nth-child(even) { background: rgba(0,212,170,0.03); }
+        .data-table tbody tr:hover { background: rgba(0,212,170,0.08); transform: scale(1.01); }
+        .data-table td { padding: clamp(10px,2vw,14px) clamp(6px,1.5vw,12px); border-bottom: 1px solid var(--border-color); text-align: center; transition: all 0.3s ease; }
+        .data-table td:first-child { text-align: right; font-weight: 700; }
+        .data-table tbody tr:hover td { color: var(--text-primary); border-bottom-color: rgba(0,212,170,0.3); }
+        .score-box, .percent-box { display: inline-block; padding: clamp(4px,1vw,6px) clamp(8px,2vw,14px); border-radius: 10px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(0.75rem,1.6vw,0.9rem); min-width: 70px; text-align: center; transition: all 0.3s ease; }
+        .score-box { background: rgba(0,212,170,0.1); color: var(--accent-teal); border: 1px solid var(--accent-teal); box-shadow: 0 0 10px rgba(0,212,170,0.1); }
+        .data-table tbody tr:hover .score-box { box-shadow: 0 0 15px rgba(0,212,170,0.2); transform: scale(1.05); }
+        .percent-box { background: rgba(79,172,254,0.1); color: var(--accent-sky); border: 1px solid var(--accent-sky); box-shadow: 0 0 10px rgba(79,172,254,0.1); }
+        .data-table tbody tr:hover .percent-box { box-shadow: 0 0 15px rgba(79,172,254,0.2); transform: scale(1.05); }
+        .fees-box { display: inline-block; padding: clamp(4px,1vw,6px) clamp(8px,2vw,14px); border-radius: 10px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: clamp(0.7rem,1.5vw,0.85rem); background: rgba(255,107,138,0.1); color: var(--accent-coral); border: 1px solid var(--accent-coral); box-shadow: 0 0 10px rgba(255,107,138,0.1); transition: all 0.3s ease; white-space: nowrap; }
+        .data-table tbody tr:hover .fees-box { box-shadow: 0 0 15px rgba(255,107,138,0.2); transform: scale(1.05); }
+        .rank { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(0.85rem,2vw,1rem); color: var(--text-muted); width: 40px; text-align: center; transition: all 0.3s ease; }
+        .rank.top3 { color: var(--accent-amber); text-shadow: 0 0 10px rgba(255,201,60,0.4); font-size: clamp(1rem,2.2vw,1.2rem); }
+        .data-table tbody tr:hover .rank { color: var(--accent-teal); transform: scale(1.2); }
+        .data-table tbody tr:hover .rank.top3 { color: var(--accent-amber); text-shadow: 0 0 15px rgba(255,201,60,0.6); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--gradient-border); border-radius: 4px; }
+        .footer { text-align: center; padding: clamp(30px,5vw,50px) clamp(15px,4vw,30px); color: var(--text-muted); font-size: clamp(0.8rem,2vw,0.9rem); border-top: 1px solid var(--border-color); margin-top: clamp(30px,5vw,50px); position: relative; z-index: 10; }
+        .footer .highlight { background: var(--gradient-header); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: 'Outfit', sans-serif; font-weight: 700; }
+        @media (max-width: 360px) { html { font-size: 14px; } .stats-bar { grid-template-columns: repeat(2, 1fr); } .section-header-text h2 { font-size: 0.85rem; } .data-table { font-size: 0.75rem; min-width: 500px; } .data-table td, .data-table th { padding: 8px 5px; } .score-box, .percent-box, .fees-box { padding: 3px 6px; font-size: 0.7rem; min-width: 50px; } .theme-toggle { width: 40px; height: 40px; font-size: 1.1rem; } }
+        @media (max-width: 480px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } .section-title { border-right-width: 3px; padding-right: 10px; } .collapsible-section { border-radius: 16px; } .section-header { padding: 15px; } .table-wrapper { border-radius: 12px; } }
+        @media (max-width: 768px) { .stats-bar { grid-template-columns: repeat(2, 1fr); max-width: 500px; } .section-header-text { gap: 8px; } .section-header-text .badge { font-size: 0.65rem; padding: 3px 10px; } }
+        @media (min-width: 1400px) { .container { max-width: 1350px; } .stats-bar { max-width: 1100px; } }
+        @media (max-height: 500px) and (orientation: landscape) { .header { padding: 20px 15px; } .header h1 { font-size: 1.4rem; } .stats-bar { grid-template-columns: repeat(4, 1fr); } }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } .particle { display: none; } }
+        @keyframes slideInUp { from { opacity: 0; transform: translateY(20px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        .section-content.open .data-table tbody tr { animation: slideInUp 0.5s ease forwards; opacity: 0; }
+        .section-content.open .data-table tbody tr:nth-child(1) { animation-delay: 0.06s; } .section-content.open .data-table tbody tr:nth-child(2) { animation-delay: 0.12s; } .section-content.open .data-table tbody tr:nth-child(3) { animation-delay: 0.18s; } .section-content.open .data-table tbody tr:nth-child(4) { animation-delay: 0.24s; } .section-content.open .data-table tbody tr:nth-child(5) { animation-delay: 0.30s; } .section-content.open .data-table tbody tr:nth-child(6) { animation-delay: 0.36s; } .section-content.open .data-table tbody tr:nth-child(7) { animation-delay: 0.42s; } .section-content.open .data-table tbody tr:nth-child(8) { animation-delay: 0.48s; } .section-content.open .data-table tbody tr:nth-child(9) { animation-delay: 0.54s; } .section-content.open .data-table tbody tr:nth-child(10) { animation-delay: 0.60s; } .section-content.open .data-table tbody tr:nth-child(11) { animation-delay: 0.66s; } .section-content.open .data-table tbody tr:nth-child(12) { animation-delay: 0.72s; } .section-content.open .data-table tbody tr:nth-child(13) { animation-delay: 0.78s; } .section-content.open .data-table tbody tr:nth-child(14) { animation-delay: 0.84s; } .section-content.open .data-table tbody tr:nth-child(15) { animation-delay: 0.90s; } .section-content.open .data-table tbody tr:nth-child(16) { animation-delay: 0.96s; } .section-content.open .data-table tbody tr:nth-child(17) { animation-delay: 1.02s; } .section-content.open .data-table tbody tr:nth-child(18) { animation-delay: 1.08s; } .section-content.open .data-table tbody tr:nth-child(19) { animation-delay: 1.14s; } .section-content.open .data-table tbody tr:nth-child(20) { animation-delay: 1.20s; } .section-content.open .data-table tbody tr:nth-child(21) { animation-delay: 1.26s; } .section-content.open .data-table tbody tr:nth-child(22) { animation-delay: 1.32s; } .section-content.open .data-table tbody tr:nth-child(23) { animation-delay: 1.38s; } .section-content.open .data-table tbody tr:nth-child(24) { animation-delay: 1.44s; } .section-content.open .data-table tbody tr:nth-child(25) { animation-delay: 1.50s; } .section-content.open .data-table tbody tr:nth-child(26) { animation-delay: 1.56s; } .section-content.open .data-table tbody tr:nth-child(27) { animation-delay: 1.62s; } .section-content.open .data-table tbody tr:nth-child(28) { animation-delay: 1.68s; } .section-content.open .data-table tbody tr:nth-child(29) { animation-delay: 1.74s; } .section-content.open .data-table tbody tr:nth-child(30) { animation-delay: 1.80s; }
+        .ripple { position: absolute; border-radius: 50%; background: rgba(0,212,170,0.3); transform: scale(0); animation: rippleEffect 0.6s ease-out; pointer-events: none; }
+        @keyframes rippleEffect { to { transform: scale(4); opacity: 0; } }
+        .section-header:focus-visible { outline: 2px solid var(--accent-teal); outline-offset: -2px; }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="تبديل الوضع">
+        <span id="theme-icon">🌙</span>
+    </button>
+    <div class="particles" id="particles"></div>
+    <div class="header">
+        <h1>🩺 MEDICAL & SCIENCE HUB</h1>
+        <div class="subtitle">دليل شامل بتنسيق الكليات الطبية والعلمية في مصر</div>
+        <div class="subtitle" style="font-size: 0.9rem; color: var(--text-muted);">شعبة علمي علوم — النظام الحديث (320 درجة)</div>
+        <div class="year-badge">2025 / 2026</div>
+    </div>
+    <div class="stats-bar">
+        <div class="stat-item"><div class="stat-number">26</div><div class="stat-label">كلية طب بشري</div></div>
+        <div class="stat-item"><div class="stat-number">20</div><div class="stat-label">كلية صيدلة</div></div>
+        <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">كلية علاج طبيعي</div></div>
+        <div class="stat-item"><div class="stat-number">20</div><div class="stat-label">كلية طب بيطري</div></div>
+    </div>
+    <div class="container">
+
+        <!-- ==================== MEDICINE GOVERNMENT ==================== -->
+        <div class="section-title">
+            <span class="icon">🩺</span>
+            <span>طب بشري حكومي — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>كليات الطب البشري الحكومية</h2>
+                    <span class="badge badge-govt">26 كلية</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الكلية</th>
+                                <th style="width:120px">التنسيق (درجات)</th>
+                                <th style="width:120px">التنسيق (نسبة)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td>طب <strong>القاهرة</strong></td><td><span class="score-box">303.50</span></td><td><span class="percent-box">94.84%</span></td></tr>
+                            <tr><td class="rank top3">2</td><td>طب <strong>المنصورة</strong></td><td><span class="score-box">303.50</span></td><td><span class="percent-box">94.84%</span></td></tr>
+                            <tr><td class="rank top3">3</td><td>طب <strong>الزقازيق</strong></td><td><span class="score-box">303.00</span></td><td><span class="percent-box">94.69%</span></td></tr>
+                            <tr><td class="rank">4</td><td>طب <strong>الإسكندرية</strong></td><td><span class="score-box">302.50</span></td><td><span class="percent-box">94.53%</span></td></tr>
+                            <tr><td class="rank">5</td><td>طب <strong>دمياط</strong></td><td><span class="score-box">302.50</span></td><td><span class="percent-box">94.53%</span></td></tr>
+                            <tr><td class="rank">6</td><td>طب <strong>فاقوس</strong></td><td><span class="score-box">302.50</span></td><td><span class="percent-box">94.53%</span></td></tr>
+                            <tr><td class="rank">7</td><td>طب <strong>طنطا</strong></td><td><span class="score-box">301.50</span></td><td><span class="percent-box">94.22%</span></td></tr>
+                            <tr><td class="rank">8</td><td>طب <strong>كفر الشيخ</strong></td><td><span class="score-box">301.50</span></td><td><span class="percent-box">94.22%</span></td></tr>
+                            <tr><td class="rank">9</td><td>طب <strong>عين شمس</strong></td><td><span class="score-box">301.00</span></td><td><span class="percent-box">94.06%</span></td></tr>
+                            <tr><td class="rank">10</td><td>طب <strong>المنوفية بشبين الكوم</strong></td><td><span class="score-box">300.50</span></td><td><span class="percent-box">93.91%</span></td></tr>
+                            <tr><td class="rank">11</td><td>طب <strong>بنها</strong></td><td><span class="score-box">300.50</span></td><td><span class="percent-box">93.91%</span></td></tr>
+                            <tr><td class="rank">12</td><td>طب <strong>بور سعيد</strong></td><td><span class="score-box">300.50</span></td><td><span class="percent-box">93.91%</span></td></tr>
+                            <tr><td class="rank">13</td><td>طب <strong>سوهاج</strong></td><td><span class="score-box">300.50</span></td><td><span class="percent-box">93.91%</span></td></tr>
+                            <tr><td class="rank">14</td><td>طب <strong>حلوان</strong></td><td><span class="score-box">300.00</span></td><td><span class="percent-box">93.75%</span></td></tr>
+                            <tr><td class="rank">15</td><td>طب <strong>قناة السويس (الإسماعيلية)</strong></td><td><span class="score-box">300.00</span></td><td><span class="percent-box">93.75%</span></td></tr>
+                            <tr><td class="rank">16</td><td>طب <strong>السويس</strong></td><td><span class="score-box">299.50</span></td><td><span class="percent-box">93.59%</span></td></tr>
+                            <tr><td class="rank">17</td><td>طب <strong>الفيوم</strong></td><td><span class="score-box">299.50</span></td><td><span class="percent-box">93.59%</span></td></tr>
+                            <tr><td class="rank">18</td><td>طب <strong>بني سويف</strong></td><td><span class="score-box">299.00</span></td><td><span class="percent-box">93.44%</span></td></tr>
+                            <tr><td class="rank">19</td><td>طب <strong>جنوب الوادي</strong></td><td><span class="score-box">299.00</span></td><td><span class="percent-box">93.44%</span></td></tr>
+                            <tr><td class="rank">20</td><td>طب <strong>أسيوط</strong></td><td><span class="score-box">298.50</span></td><td><span class="percent-box">93.28%</span></td></tr>
+                            <tr><td class="rank">21</td><td>طب <strong>الأقصر</strong></td><td><span class="score-box">298.50</span></td><td><span class="percent-box">93.28%</span></td></tr>
+                            <tr><td class="rank">22</td><td>طب <strong>العريش</strong></td><td><span class="score-box">298.50</span></td><td><span class="percent-box">93.28%</span></td></tr>
+                            <tr><td class="rank">23</td><td>طب <strong>المنيا</strong></td><td><span class="score-box">298.50</span></td><td><span class="percent-box">93.28%</span></td></tr>
+                            <tr><td class="rank">24</td><td>طب <strong>أسوان</strong></td><td><span class="score-box">298.00</span></td><td><span class="percent-box">93.13%</span></td></tr>
+                            <tr><td class="rank">25</td><td>طب <strong>الوادي الجديد</strong></td><td><span class="score-box">298.00</span></td><td><span class="percent-box">93.13%</span></td></tr>
+                            <tr><td class="rank">26</td><td>طب وجراحة الفم والأسنان <strong>سوهاج</strong></td><td><span class="score-box">297.50</span></td><td><span class="percent-box">92.97%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PHARMACY GOVERNMENT ==================== -->
+        <div class="section-title">
+            <span class="icon">💊</span>
+            <span>صيدلة حكومية — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>كليات الصيدلة الحكومية</h2>
+                    <span class="badge badge-govt">20 كلية</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الكلية</th>
+                                <th style="width:120px">التنسيق (درجات)</th>
+                                <th style="width:120px">التنسيق (نسبة)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td>صيدلة <strong>سوهاج</strong></td><td><span class="score-box">297.00</span></td><td><span class="percent-box">92.81%</span></td></tr>
+                            <tr><td class="rank top3">2</td><td>صيدلة <strong>المنصورة</strong></td><td><span class="score-box">296.00</span></td><td><span class="percent-box">92.50%</span></td></tr>
+                            <tr><td class="rank top3">3</td><td>صيدلة <strong>جنوب الوادي</strong></td><td><span class="score-box">296.00</span></td><td><span class="percent-box">92.50%</span></td></tr>
+                            <tr><td class="rank">4</td><td>صيدلة <strong>أسيوط</strong></td><td><span class="score-box">295.50</span></td><td><span class="percent-box">92.34%</span></td></tr>
+                            <tr><td class="rank">5</td><td>صيدلة <strong>الزقازيق</strong></td><td><span class="score-box">295.50</span></td><td><span class="percent-box">92.34%</span></td></tr>
+                            <tr><td class="rank">6</td><td>صيدلة <strong>المنيا</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">7</td><td>صيدلة <strong>طنطا</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">8</td><td>صيدلة <strong>قناة السويس (الإسماعيلية)</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">9</td><td>صيدلة وتصنيع دوائي <strong>كفر الشيخ</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">10</td><td>صيدلة <strong>الإسكندرية</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">11</td><td>صيدلة <strong>القاهرة</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">12</td><td>صيدلة <strong>المنوفية</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">13</td><td>صيدلة <strong>بني سويف</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">14</td><td>صيدلة <strong>بور سعيد</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">15</td><td>صيدلة <strong>دمنهور</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">16</td><td>صيدلة <strong>عين شمس</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">92.03%</span></td></tr>
+                            <tr><td class="rank">17</td><td>صيدلة <strong>الفيوم</strong></td><td><span class="score-box">294.00</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                            <tr><td class="rank">18</td><td>صيدلة <strong>الوادي الجديد</strong></td><td><span class="score-box">294.00</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                            <tr><td class="rank">19</td><td>صيدلة <strong>حلوان</strong></td><td><span class="score-box">294.00</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                            <tr><td class="rank">20</td><td>صيدلة <strong>مدينة السادات</strong></td><td><span class="score-box">294.00</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PHYSICAL THERAPY GOVERNMENT ==================== -->
+        <div class="section-title">
+            <span class="icon">🏥</span>
+            <span>علاج طبيعي حكومي — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>كليات العلاج الطبيعي الحكومية</h2>
+                    <span class="badge badge-govt">8 كليات</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الكلية</th>
+                                <th style="width:120px">التنسيق (درجات)</th>
+                                <th style="width:120px">التنسيق (نسبة)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td>علاج طبيعي <strong>جنوب الوادي</strong></td><td><span class="score-box">295.50</span></td><td><span class="percent-box">92.34%</span></td></tr>
+                            <tr><td class="rank top3">2</td><td>علاج طبيعي <strong>كفر الشيخ</strong></td><td><span class="score-box">295.50</span></td><td><span class="percent-box">92.34%</span></td></tr>
+                            <tr><td class="rank top3">3</td><td>علاج طبيعي <strong>قناة السويس</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">4</td><td>علاج طبيعي <strong>بور سعيد</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">5</td><td>علاج طبيعي <strong>بنها</strong></td><td><span class="score-box">295.00</span></td><td><span class="percent-box">92.19%</span></td></tr>
+                            <tr><td class="rank">6</td><td>علاج طبيعي <strong>السويس</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                            <tr><td class="rank">7</td><td>علاج طبيعي <strong>القاهرة</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                            <tr><td class="rank">8</td><td>علاج طبيعي <strong>بني سويف</strong></td><td><span class="score-box">294.50</span></td><td><span class="percent-box">91.88%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== VETERINARY MEDICINE GOVERNMENT ==================== -->
+        <div class="section-title">
+            <span class="icon">🐄</span>
+            <span>طب بيطري حكومي — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>كليات الطب البيطري الحكومية</h2>
+                    <span class="badge badge-govt">20 كلية</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الكلية</th>
+                                <th style="width:120px">التنسيق (درجات)</th>
+                                <th style="width:120px">التنسيق (نسبة)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td>طب بيطري <strong>سوهاج</strong></td><td><span class="score-box">290.50</span></td><td><span class="percent-box">90.78%</span></td></tr>
+                            <tr><td class="rank top3">2</td><td>طب بيطري <strong>المنصورة</strong></td><td><span class="score-box">288.00</span></td><td><span class="percent-box">90.00%</span></td></tr>
+                            <tr><td class="rank top3">3</td><td>طب بيطري <strong>جنوب الوادي</strong></td><td><span class="score-box">288.00</span></td><td><span class="percent-box">90.00%</span></td></tr>
+                            <tr><td class="rank">4</td><td>طب بيطري <strong>أسيوط</strong></td><td><span class="score-box">287.50</span></td><td><span class="percent-box">89.84%</span></td></tr>
+                            <tr><td class="rank">5</td><td>طب بيطري <strong>الزقازيق</strong></td><td><span class="score-box">287.50</span></td><td><span class="percent-box">89.84%</span></td></tr>
+                            <tr><td class="rank">6</td><td>طب بيطري <strong>كفر الشيخ</strong></td><td><span class="score-box">286.50</span></td><td><span class="percent-box">89.53%</span></td></tr>
+                            <tr><td class="rank">7</td><td>طب بيطري <strong>المنيا</strong></td><td><span class="score-box">285.50</span></td><td><span class="percent-box">89.22%</span></td></tr>
+                            <tr><td class="rank">8</td><td>طب بيطري <strong>عين شمس</strong></td><td><span class="score-box">285.00</span></td><td><span class="percent-box">89.06%</span></td></tr>
+                            <tr><td class="rank">9</td><td>طب بيطري <strong>أسوان</strong></td><td><span class="score-box">282.50</span></td><td><span class="percent-box">88.28%</span></td></tr>
+                            <tr><td class="rank">10</td><td>طب بيطري <strong>الإسكندرية</strong></td><td><span class="score-box">282.00</span></td><td><span class="percent-box">88.13%</span></td></tr>
+                            <tr><td class="rank">11</td><td>طب بيطري <strong>المنوفية</strong></td><td><span class="score-box">282.00</span></td><td><span class="percent-box">88.13%</span></td></tr>
+                            <tr><td class="rank">12</td><td>طب بيطري <strong>دمنهور</strong></td><td><span class="score-box">282.00</span></td><td><span class="percent-box">88.13%</span></td></tr>
+                            <tr><td class="rank">13</td><td>طب بيطري <strong>بنها</strong></td><td><span class="score-box">281.50</span></td><td><span class="percent-box">87.97%</span></td></tr>
+                            <tr><td class="rank">14</td><td>طب بيطري <strong>القاهرة</strong></td><td><span class="score-box">281.00</span></td><td><span class="percent-box">87.81%</span></td></tr>
+                            <tr><td class="rank">15</td><td>طب بيطري <strong>قناة السويس (الإسماعيلية)</strong></td><td><span class="score-box">280.50</span></td><td><span class="percent-box">87.66%</span></td></tr>
+                            <tr><td class="rank">16</td><td>طب بيطري <strong>العريش</strong></td><td><span class="score-box">280.00</span></td><td><span class="percent-box">87.50%</span></td></tr>
+                            <tr><td class="rank">17</td><td>طب بيطري <strong>مدينة السادات</strong></td><td><span class="score-box">279.00</span></td><td><span class="percent-box">87.19%</span></td></tr>
+                            <tr><td class="rank">18</td><td>طب بيطري <strong>الوادي الجديد</strong></td><td><span class="score-box">278.50</span></td><td><span class="percent-box">87.03%</span></td></tr>
+                            <tr><td class="rank">19</td><td>طب بيطري <strong>بني سويف</strong></td><td><span class="score-box">278.50</span></td><td><span class="percent-box">87.03%</span></td></tr>
+                            <tr><td class="rank">20</td><td>طب بيطري <strong>مطروح</strong></td><td><span class="score-box">277.50</span></td><td><span class="percent-box">86.72%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== COMPUTER SCIENCE - SCIENCE BRANCH ==================== -->
+        <div class="section-title">
+            <span class="icon">💻</span>
+            <span>حاسبات ومعلومات علوم — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>كليات الحاسبات والمعلومات (علوم)</h2>
+                    <span class="badge badge-govt">25+ كلية</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الكلية</th>
+                                <th style="width:120px">التنسيق (درجات)</th>
+                                <th style="width:120px">التنسيق (نسبة)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td>حاسبات ومعلومات <strong>سوهاج علوم</strong></td><td><span class="score-box">293.50</span></td><td><span class="percent-box">91.72%</span></td></tr>
+                            <tr><td class="rank top3">2</td><td>حاسبات ومعلومات <strong>قنا علوم</strong></td><td><span class="score-box">292.50</span></td><td><span class="percent-box">91.41%</span></td></tr>
+                            <tr><td class="rank top3">3</td><td>حاسبات وذكاء اصطناعي <strong>الغردقة علوم</strong></td><td><span class="score-box">291.00</span></td><td><span class="percent-box">90.94%</span></td></tr>
+                            <tr><td class="rank">4</td><td>حاسبات ومعلومات <strong>المنيا علوم</strong></td><td><span class="score-box">291.00</span></td><td><span class="percent-box">90.94%</span></td></tr>
+                            <tr><td class="rank">5</td><td>حاسبات ومعلومات <strong>أسيوط علوم</strong></td><td><span class="score-box">290.50</span></td><td><span class="percent-box">90.78%</span></td></tr>
+                            <tr><td class="rank">6</td><td>حاسبات ومعلومات <strong>الأقصر علوم</strong></td><td><span class="score-box">290.00</span></td><td><span class="percent-box">90.63%</span></td></tr>
+                            <tr><td class="rank">7</td><td>حاسبات ومعلومات <strong>المنصورة علوم</strong></td><td><span class="score-box">289.50</span></td><td><span class="percent-box">90.47%</span></td></tr>
+                            <tr><td class="rank">8</td><td>حاسبات ومعلومات <strong>الزقازيق علوم</strong></td><td><span class="score-box">289.00</span></td><td><span class="percent-box">90.31%</span></td></tr>
+                            <tr><td class="rank">9</td><td>حاسبات ومعلومات <strong>بني سويف علوم</strong></td><td><span class="score-box">288.50</span></td><td><span class="percent-box">90.16%</span></td></tr>
+                            <tr><td class="rank">10</td><td>حاسبات ومعلومات <strong>السويس علوم</strong></td><td><span class="score-box">288.00</span></td><td><span class="percent-box">90.00%</span></td></tr>
+                            <tr><td class="rank">11</td><td>حاسبات ومعلومات <strong>كفر الشيخ علوم</strong></td><td><span class="score-box">287.50</span></td><td><span class="percent-box">89.84%</span></td></tr>
+                            <tr><td class="rank">12</td><td>حاسبات ومعلومات <strong>الفيوم علوم</strong></td><td><span class="score-box">287.00</span></td><td><span class="percent-box">89.69%</span></td></tr>
+                            <tr><td class="rank">13</td><td>حاسبات ومعلومات <strong>طنطا علوم</strong></td><td><span class="score-box">286.50</span></td><td><span class="percent-box">89.53%</span></td></tr>
+                            <tr><td class="rank">14</td><td>حاسبات ومعلومات <strong>العريش علوم</strong></td><td><span class="score-box">286.00</span></td><td><span class="percent-box">89.38%</span></td></tr>
+                            <tr><td class="rank">15</td><td>حاسبات ومعلومات <strong>دمنهور علوم</strong></td><td><span class="score-box">285.50</span></td><td><span class="percent-box">89.22%</span></td></tr>
+                            <tr><td class="rank">16</td><td>حاسبات ومعلومات <strong>المنوفية علوم</strong></td><td><span class="score-box">285.00</span></td><td><span class="percent-box">89.06%</span></td></tr>
+                            <tr><td class="rank">17</td><td>حاسبات ومعلومات <strong>الوادي الجديد علوم</strong></td><td><span class="score-box">284.50</span></td><td><span class="percent-box">88.91%</span></td></tr>
+                            <tr><td class="rank">18</td><td>حاسبات ومعلومات <strong>بور سعيد علوم</strong></td><td><span class="score-box">284.00</span></td><td><span class="percent-box">88.75%</span></td></tr>
+                            <tr><td class="rank">19</td><td>حاسبات ومعلومات <strong>حلوان علوم</strong></td><td><span class="score-box">283.50</span></td><td><span class="percent-box">88.59%</span></td></tr>
+                            <tr><td class="rank">20</td><td>حاسبات ومعلومات <strong>القاهرة علوم</strong></td><td><span class="score-box">283.00</span></td><td><span class="percent-box">88.44%</span></td></tr>
+                            <tr><td class="rank">21</td><td>حاسبات ومعلومات <strong>عين شمس علوم</strong></td><td><span class="score-box">282.50</span></td><td><span class="percent-box">88.28%</span></td></tr>
+                            <tr><td class="rank">22</td><td>حاسبات ومعلومات <strong>الإسكندرية علوم</strong></td><td><span class="score-box">282.00</span></td><td><span class="percent-box">88.13%</span></td></tr>
+                            <tr><td class="rank">23</td><td>حاسبات ومعلومات <strong>مدينة السادات علوم</strong></td><td><span class="score-box">281.50</span></td><td><span class="percent-box">87.97%</span></td></tr>
+                            <tr><td class="rank">24</td><td>حاسبات ومعلومات <strong>مطروح علوم</strong></td><td><span class="score-box">281.00</span></td><td><span class="percent-box">87.81%</span></td></tr>
+                            <tr><td class="rank">25</td><td>حاسبات ومعلومات <strong>دمياط علوم</strong></td><td><span class="score-box">280.50</span></td><td><span class="percent-box">87.66%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PRIVATE UNIVERSITIES ==================== -->
+        <div class="section-title">
+            <span class="icon">🏢</span>
+            <span>الجامعات الأهلية والخاصة — شعبة علمي علوم</span>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>الجامعات الأهلية والخاصة — طب بشري</h2>
+                    <span class="badge badge-private">15+ جامعة</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الجامعة / الكلية</th>
+                                <th style="width:100px">التنسيق</th>
+                                <th style="width:120px">النسبة</th>
+                                <th style="width:150px">المصروفات السنوية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td><strong>القاهرة الأهلية</strong> — طب بشري</td><td><span class="score-box">92%</span></td><td><span class="percent-box">أعلى أهلي</span></td><td><span class="fees-box">180,000 جنيه</span></td></tr>
+                            <tr><td class="rank">2</td><td><strong>عين شمس الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">3</td><td><strong>المنصورة الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">170,000 جنيه</span></td></tr>
+                            <tr><td class="rank">4</td><td><strong>الزقازيق الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">150,000 جنيه</span></td></tr>
+                            <tr><td class="rank">5</td><td><strong>أسيوط الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">160,000 جنيه</span></td></tr>
+                            <tr><td class="rank">6</td><td><strong>حلوان الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">155,000 جنيه</span></td></tr>
+                            <tr><td class="rank">7</td><td><strong>بنها الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">165,000 جنيه</span></td></tr>
+                            <tr><td class="rank">8</td><td><strong>بني سويف الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">140,000 جنيه</span></td></tr>
+                            <tr><td class="rank">9</td><td><strong>المنوفية الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">145,000 جنيه</span></td></tr>
+                            <tr><td class="rank">10</td><td><strong>المنيا الأهلية</strong> — طب بشري</td><td><span class="score-box">90%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">150,000 جنيه</span></td></tr>
+                            <tr><td class="rank">11</td><td><strong>النيل الأهلية</strong> — طب بشري</td><td><span class="score-box">88%</span></td><td><span class="percent-box">أعلى تكلفة</span></td><td><span class="fees-box">250,000 جنيه</span></td></tr>
+                            <tr><td class="rank">12</td><td><strong>6 أكتوبر</strong> — طب بشري</td><td><span class="score-box">88%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">200,000 جنيه</span></td></tr>
+                            <tr><td class="rank">13</td><td><strong>مصر للعلوم والتكنولوجيا MUST</strong> — طب بشري</td><td><span class="score-box">88%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">190,000 جنيه</span></td></tr>
+                            <tr><td class="rank">14</td><td><strong>بدر (القاهرة)</strong> — طب بشري</td><td><span class="score-box">87%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">175,000 جنيه</span></td></tr>
+                            <tr><td class="rank">15</td><td><strong>العلمين الدولية</strong> — طب بشري</td><td><span class="score-box">85%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">220,000 جنيه</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>الجامعات الأهلية والخاصة — صيدلة</h2>
+                    <span class="badge badge-private">20+ جامعة</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الجامعة / الكلية</th>
+                                <th style="width:100px">التنسيق</th>
+                                <th style="width:120px">النسبة</th>
+                                <th style="width:150px">المصروفات السنوية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td><strong>القاهرة الأهلية</strong> — صيدلة</td><td><span class="score-box">88%</span></td><td><span class="percent-box">أعلى أهلي</span></td><td><span class="fees-box">120,000 جنيه</span></td></tr>
+                            <tr><td class="rank">2</td><td><strong>عين شمس الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">3</td><td><strong>المنصورة الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">110,000 جنيه</span></td></tr>
+                            <tr><td class="rank">4</td><td><strong>الزقازيق الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">5</td><td><strong>أسيوط الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">105,000 جنيه</span></td></tr>
+                            <tr><td class="rank">6</td><td><strong>حلوان الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">7</td><td><strong>بنها الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">110,000 جنيه</span></td></tr>
+                            <tr><td class="rank">8</td><td><strong>بني سويف الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">95,000 جنيه</span></td></tr>
+                            <tr><td class="rank">9</td><td><strong>المنوفية الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">98,000 جنيه</span></td></tr>
+                            <tr><td class="rank">10</td><td><strong>المنيا الأهلية</strong> — صيدلة</td><td><span class="score-box">85%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">11</td><td><strong>النيل الأهلية</strong> — صيدلة</td><td><span class="score-box">82%</span></td><td><span class="percent-box">أعلى تكلفة</span></td><td><span class="fees-box">180,000 جنيه</span></td></tr>
+                            <tr><td class="rank">12</td><td><strong>6 أكتوبر</strong> — صيدلة</td><td><span class="score-box">82%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">140,000 جنيه</span></td></tr>
+                            <tr><td class="rank">13</td><td><strong>مصر للعلوم والتكنولوجيا MUST</strong> — صيدلة</td><td><span class="score-box">82%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">130,000 جنيه</span></td></tr>
+                            <tr><td class="rank">14</td><td><strong>بدر (القاهرة)</strong> — صيدلة</td><td><span class="score-box">80%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">120,000 جنيه</span></td></tr>
+                            <tr><td class="rank">15</td><td><strong>العلمين الدولية</strong> — صيدلة</td><td><span class="score-box">78%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">160,000 جنيه</span></td></tr>
+                            <tr><td class="rank">16</td><td><strong>الملك سلمان الدولية</strong> — صيدلة</td><td><span class="score-box">78%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">150,000 جنيه</span></td></tr>
+                            <tr><td class="rank">17</td><td><strong>الجلالة</strong> — صيدلة</td><td><span class="score-box">78%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">155,000 جنيه</span></td></tr>
+                            <tr><td class="rank">18</td><td><strong>مصر الدولية</strong> — صيدلة</td><td><span class="score-box">80%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">19</td><td><strong>أكتوبر للعلوم الحديثة</strong> — صيدلة</td><td><span class="score-box">80%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">20</td><td><strong>الدلتا (جمصة)</strong> — صيدلة</td><td><span class="score-box">78%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>الجامعات الأهلية والخاصة — علاج طبيعي</h2>
+                    <span class="badge badge-private">10+ جامعة</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الجامعة / الكلية</th>
+                                <th style="width:100px">التنسيق</th>
+                                <th style="width:120px">النسبة</th>
+                                <th style="width:150px">المصروفات السنوية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td><strong>القاهرة الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">85%</span></td><td><span class="percent-box">أعلى أهلي</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">2</td><td><strong>عين شمس الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">3</td><td><strong>المنصورة الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">95,000 جنيه</span></td></tr>
+                            <tr><td class="rank">4</td><td><strong>الزقازيق الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">90,000 جنيه</span></td></tr>
+                            <tr><td class="rank">5</td><td><strong>أسيوط الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">85,000 جنيه</span></td></tr>
+                            <tr><td class="rank">6</td><td><strong>حلوان الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">88,000 جنيه</span></td></tr>
+                            <tr><td class="rank">7</td><td><strong>بنها الأهلية</strong> — علاج طبيعي</td><td><span class="score-box">82%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">92,000 جنيه</span></td></tr>
+                            <tr><td class="rank">8</td><td><strong>6 أكتوبر</strong> — علاج طبيعي</td><td><span class="score-box">80%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">110,000 جنيه</span></td></tr>
+                            <tr><td class="rank">9</td><td><strong>مصر للعلوم والتكنولوجيا MUST</strong> — علاج طبيعي</td><td><span class="score-box">80%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">10</td><td><strong>العلمين الدولية</strong> — علاج طبيعي</td><td><span class="score-box">78%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">130,000 جنيه</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>الجامعات الأهلية والخاصة — طب بيطري</h2>
+                    <span class="badge badge-private">10+ جامعة</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الجامعة / الكلية</th>
+                                <th style="width:100px">التنسيق</th>
+                                <th style="width:120px">النسبة</th>
+                                <th style="width:150px">المصروفات السنوية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td><strong>القاهرة الأهلية</strong> — طب بيطري</td><td><span class="score-box">80%</span></td><td><span class="percent-box">أعلى أهلي</span></td><td><span class="fees-box">90,000 جنيه</span></td></tr>
+                            <tr><td class="rank">2</td><td><strong>عين شمس الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">3</td><td><strong>المنصورة الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">85,000 جنيه</span></td></tr>
+                            <tr><td class="rank">4</td><td><strong>الزقازيق الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">80,000 جنيه</span></td></tr>
+                            <tr><td class="rank">5</td><td><strong>أسيوط الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">82,000 جنيه</span></td></tr>
+                            <tr><td class="rank">6</td><td><strong>حلوان الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">80,000 جنيه</span></td></tr>
+                            <tr><td class="rank">7</td><td><strong>بنها الأهلية</strong> — طب بيطري</td><td><span class="score-box">78%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">85,000 جنيه</span></td></tr>
+                            <tr><td class="rank">8</td><td><strong>6 أكتوبر</strong> — طب بيطري</td><td><span class="score-box">76%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">95,000 جنيه</span></td></tr>
+                            <tr><td class="rank">9</td><td><strong>مصر للعلوم والتكنولوجيا MUST</strong> — طب بيطري</td><td><span class="score-box">76%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">90,000 جنيه</span></td></tr>
+                            <tr><td class="rank">10</td><td><strong>العلمين الدولية</strong> — طب بيطري</td><td><span class="score-box">75%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">110,000 جنيه</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection(this)" tabindex="0" role="button" aria-expanded="false">
+                <div class="section-header-text">
+                    <h2>الجامعات الأهلية والخاصة — حاسبات ومعلومات</h2>
+                    <span class="badge badge-private">20+ جامعة</span>
+                </div>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">#</th>
+                                <th>اسم الجامعة / الكلية</th>
+                                <th style="width:100px">التنسيق</th>
+                                <th style="width:120px">النسبة</th>
+                                <th style="width:150px">المصروفات السنوية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="rank top3">1</td><td><strong>القاهرة الأهلية</strong> — حاسبات وذكاء اصطناعي</td><td><span class="score-box">75%</span></td><td><span class="percent-box">أعلى أهلي</span></td><td><span class="fees-box">80,000 جنيه</span></td></tr>
+                            <tr><td class="rank">2</td><td><strong>عين شمس الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">3</td><td><strong>المنصورة الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">75,000 جنيه</span></td></tr>
+                            <tr><td class="rank">4</td><td><strong>الزقازيق الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">70,000 جنيه</span></td></tr>
+                            <tr><td class="rank">5</td><td><strong>أسيوط الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">72,000 جنيه</span></td></tr>
+                            <tr><td class="rank">6</td><td><strong>حلوان الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">70,000 جنيه</span></td></tr>
+                            <tr><td class="rank">7</td><td><strong>بنها الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">75,000 جنيه</span></td></tr>
+                            <tr><td class="rank">8</td><td><strong>بني سويف الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">65,000 جنيه</span></td></tr>
+                            <tr><td class="rank">9</td><td><strong>المنوفية الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">68,000 جنيه</span></td></tr>
+                            <tr><td class="rank">10</td><td><strong>المنيا الأهلية</strong> — حاسبات</td><td><span class="score-box">70%</span></td><td><span class="percent-box">حد أدنى عام</span></td><td><span class="fees-box">70,000 جنيه</span></td></tr>
+                            <tr><td class="rank">11</td><td><strong>النيل الأهلية</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">أعلى تكلفة</span></td><td><span class="fees-box">145,000 جنيه</span></td></tr>
+                            <tr><td class="rank">12</td><td><strong>6 أكتوبر</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">85,000 جنيه</span></td></tr>
+                            <tr><td class="rank">13</td><td><strong>مصر للعلوم والتكنولوجيا MUST</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">75,000 جنيه</span></td></tr>
+                            <tr><td class="rank">14</td><td><strong>بدر (القاهرة)</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">80,000 جنيه</span></td></tr>
+                            <tr><td class="rank">15</td><td><strong>العلمين الدولية</strong> — حاسبات</td><td><span class="score-box">65%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">100,000 جنيه</span></td></tr>
+                            <tr><td class="rank">16</td><td><strong>الملك سلمان الدولية</strong> — حاسبات</td><td><span class="score-box">65%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">95,000 جنيه</span></td></tr>
+                            <tr><td class="rank">17</td><td><strong>الجلالة</strong> — حاسبات</td><td><span class="score-box">65%</span></td><td><span class="percent-box">جامعة دولية</span></td><td><span class="fees-box">98,000 جنيه</span></td></tr>
+                            <tr><td class="rank">18</td><td><strong>مصر الدولية</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">19</td><td><strong>أكتوبر للعلوم الحديثة</strong> — حاسبات</td><td><span class="score-box">68%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                            <tr><td class="rank">20</td><td><strong>الدلتا (جمصة)</strong> — حاسبات</td><td><span class="score-box">66%</span></td><td><span class="percent-box">خاصة معتمدة</span></td><td><span class="fees-box">غير محدد</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>تم التحديث بتاريخ <span class="highlight">2025-2026</span> | مصادر: وزارة التعليم العالي المصرية — موقع التنسيق الإلكتروني</p>
+        <p style="margin-top:10px; font-size:0.8rem;">⚡ Developed by Abdullah Ayman</p>
+    </div>
+
+    <script>
+        // Generate floating particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 6 + 4) + 's';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.width = (Math.random() * 3 + 2) + 'px';
+            particle.style.height = particle.style.width;
+            const colors = ['#00d4aa', '#5bffba', '#ff6b8a', '#4facfe', '#ffc93c'];
+            particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.boxShadow = `0 0 10px ${particle.style.background}`;
+            particlesContainer.appendChild(particle);
+        }
+
+        // Toggle sections with creative animation
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isOpen = content.classList.contains('open');
+
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            ripple.className = 'ripple';
+            const rect = header.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = '50%';
+            ripple.style.top = '50%';
+            ripple.style.marginLeft = -size / 2 + 'px';
+            ripple.style.marginTop = -size / 2 + 'px';
+            header.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 600);
+
+            if (isOpen) {
+                content.classList.remove('open');
+                icon.classList.remove('open');
+                header.setAttribute('aria-expanded', 'false');
+            } else {
+                content.classList.add('open');
+                icon.classList.add('open');
+                header.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Keyboard support for accessibility
+        document.querySelectorAll('.section-header').forEach(header => {
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleSection(header);
+                }
+            });
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            const currentTheme = html.getAttribute('data-theme');
+
+            if (currentTheme === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                icon.textContent = '🌙';
+            } else if (currentTheme === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                icon.textContent = '☀️';
+            } else {
+                // Check system preference
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    html.setAttribute('data-theme', 'dark');
+                    icon.textContent = '🌙';
+                } else {
+                    html.setAttribute('data-theme', 'light');
+                    icon.textContent = '☀️';
+                }
+            }
+        }
+
+        // Set initial theme icon based on system preference
+        document.addEventListener('DOMContentLoaded', function() {
+            const icon = document.getElementById('theme-icon');
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                icon.textContent = '☀️';
+            } else {
+                icon.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
